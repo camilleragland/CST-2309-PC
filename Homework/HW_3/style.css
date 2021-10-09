@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro&display=swap');
+
+html{
+    background-color: #889EAF;
+}
+
+section{
+background-color: antiquewhite;
+margin-left: 200px;
+margin-right: 200px;
+}
+
+.header{
+    font-family: 'Oswald', sans-serif;
+    margin: auto; 
+    text-align: center;
+    padding-left: 0px;
+}
+
+p.header{
+    font-size: 1.2em;
+    color: white;
+    padding-left: 300px;
+    background-clip: content-box;
+}
+
+p.content{
+    background-color: antiquewhite;
+}
+
+h1, h2{
+    box-sizing: border-box;
+    width: 1000px;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 0px;
+    text-align: center;
+    border: 5px dotted black;
+    border-radius: 5px;
+    background-color: #D4B499;
+    background-clip:border-box;
+    
+}
+
+
+
+img {
+    border-width: 2px;
+    border: white;
+    padding-left: 10px;
+    padding-top: 70px;
+    padding-right: 10px; 
+    float: left; 
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+    padding-left: 100px; 
+    padding-right: 100px;
+    
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    padding-left: 120px;
+    
+}
+
+ul{
+padding-left: 400px;
+}
+
+li{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+    
+}
