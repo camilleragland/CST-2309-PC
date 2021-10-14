@@ -5,8 +5,8 @@
    Tutorial 5
    Tutorial Case
    
-   Author:   
-   Date:     
+   Author:   Camille Ragland
+   Date:     10/14/2021
    
    Filename: tf_flex.css
    
@@ -20,7 +20,10 @@
    Base Flex Styles
    ================
 */
-
+body{
+   display: flex;
+   flex-flow: row wrap;
+}
 
 
 
@@ -31,7 +34,13 @@
 
 @media only screen and (max-width: 480px) {
   
+   aside{
+      order: 99;
+   }
 
+   footer{
+      order: 100;
+   }
  
 }
 

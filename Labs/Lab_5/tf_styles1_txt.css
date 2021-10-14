@@ -5,8 +5,8 @@
    Tutorial 5
    Tutorial Case
    
-   Author:   
-   Date:     
+   Author:   Camille Ragland
+   Date:     10/12/21
    
    Filename: tf_styles1.css
    
@@ -145,9 +145,74 @@ body > footer {
 
 /* Pulldown Menu Styles */
 
+ul.submenu{
+   display: none;
+}
 
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover{
+   display: block;
+}
 
 
 /* New Styles Added Below */
 
+/*mobile styles*/
+@media only screen and (max-width: 480px) {
+   
+nav.horizontal a {
+   font-size: 1.5em;
+   line-height: 2.2em;
+}
 
+aside{
+   display: none;
+}
+
+}
+
+/*tablet styles*/
+@media only screen and (min-width: 481px){
+
+   ul.mainmenu > li{
+      float:left; 
+      position: relative;
+      width: 20%;
+   }
+}
+
+ul.submenu{
+   box-shadow: rgb(51, 51, 51) 5px 5px 15px;
+   position: absolute;
+   width: 200%;
+}
+
+/*Desktop styles*/
+@media only screen and (min-width: 769px){
+ul.submenu{
+   background: transparent;
+   box-shadow: none;
+   display: block;
+   position: relative;
+   width: 100%;
+}
+nav.horizontal::after{
+   clear: both;
+   content: " ";
+   display: table;
+}
+
+nav.horizontal a.submenuTitle{
+   display: none;
+}
+
+article{
+   float: left;
+   margin-right: 5%;
+   width: 55%;
+}
+
+aside{
+   float: left;
+   width: 40%;
+}
+}
