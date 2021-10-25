@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+body{
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+}
+
+.nav{
+    position: sticky;
+    font-family: 'Fredericka the Great', cursive;
+    margin-top: 25px;
+    margin-left: 0px;
+    background-color: #e66918;
+    overflow: hidden;
+    width: 100%;
+}
+.nav ul{
+    list-style-type: none;
+    top: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+.nav a{
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover{
+    background-color: #9f3b1d;
+}
+
+h1{
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.left-image{
+    position: absolute;
+    top: 250px;
+    left: 825px;
+    width: 600px;
+    
+}
+
+.description p{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    width: 500px;
+}
+
+.times{
+    position: absolute;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    left: 300px;
+    top: 400px;
+    line-height: 200%;
+}
+
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #e66918;
+    color: white;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}

@@ -1,0 +1,73 @@
+h2{
+    position: absolute;
+    left: 250px;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 300%;
+}
+
+.truck img{
+    position: absolute;
+}
+
+.menu {
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    background-color: #699d5c;
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    top: 310px;
+    left: 50px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+    .menu-item {
+      color: white;
+      display: flex;
+      width: 50%;
+      list-style-type: none;
+      padding: 0 1rem;
+      margin: 0 0 1rem;
+    }
+      .menu section {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+        .menu header {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        } 
+          .spacer {
+            content: '';
+            width: 100%;
+            height: 1px;
+            margin: 0 .5rem;
+            border-bottom: 1px dashed white;
+            flex: 1;
+          }
+    
+          .menu h1 {
+            margin: 0;
+            font-size: 1rem;
+          }
+
+
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #e66918;
+    color: white;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}
