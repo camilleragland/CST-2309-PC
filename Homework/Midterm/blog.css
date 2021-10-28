@@ -1,0 +1,27 @@
+p.post{
+    background-color: #699d5c;
+    color: white;
+    max-width: 800px;
+    padding: 15px;
+    bottom: 5px;
+}
+
+h2{
+    color:white;
+    font-family: 'Fredericka the Great', cursive;
+
+}
+
+.crew{
+    position: absolute;
+    right: 100px;
+    top: 250px;
+    width: 400px;
+}
+
+.rigatoni{
+    position: absolute;
+    right: 100px;
+    top: 550px;
+    width: 400px;
+}

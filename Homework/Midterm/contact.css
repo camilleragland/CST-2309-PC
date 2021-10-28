@@ -1,0 +1,108 @@
+
+h2{
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 300%;
+    text-align: center;
+}
+
+.form{
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #699d5c;
+    position: absolute;
+    left: 250px;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    padding: 12px;
+}
+
+.form label{
+padding: 20px 15px;
+color: white;
+font-family: 'Fredericka the Great', cursive;
+
+}
+
+input[type=text]{
+    transition: 0.4s ease-in-out;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #699d5c;
+    color: white;
+    
+}
+input[type=text]:focus{
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+input[type=text]:visited{
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input[type=text]::placeholder{
+    color: white;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.comment{
+    position: absolute;
+    top: 175px;
+    right: 450px;
+    text-align: center;
+    padding: 1px;
+}
+
+.submit{
+    position: absolute;
+    top: 800px;
+    right: 600px;
+    padding: 12px 50px;
+    align-content: center;
+}
+button.submit:hover{
+    background-color: #e66918;
+    color: white;
+}
+
+textarea{
+    top: 30px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 280px;
+}
+
+.contact-image{
+    position: absolute;
+    padding-top: 550px;
+    left: 500px;
+    width: 500px;
+}
+
+footer{
+    position:-webkit-sticky;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #e66918;
+    color: white;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}

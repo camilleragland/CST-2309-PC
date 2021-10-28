@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+    <title>Contact us</title>
+</head>
+<body>
+    <h1>Impastable</h1> 
+
+        <img class="logo" src="logo.png" alt="impastable logo"/>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <h2>Contact Us!</h2>
+
+        <div class="form">
+            <form id="contact" action="sendconfirmation.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                <label for="email">E-mail</label>
+                <input type="text" id="mail" name="email" placeholder="Your E-mail">
+                <label  class="comment" for="comments">Comments</label>
+                <textarea cols="46" rows="8" id="comments" placeholder="Enter text here..."></textarea>
+            </form>
+        </div>
+
+        <button class = "submit" type="submit" form="contact">Submit</button>
+
+        <img class= "contact-image" src="pasta.jpeg" alt=""/>
+
+</body>
+<footer>
+    <p> address: 145 59th St. New York, New York, 10034,
+        phone number: 347-647-7383, email:impastablenyc@gmail.com </p>
+</footer>
+</html>
