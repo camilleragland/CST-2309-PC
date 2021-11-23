@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scores</title>
+</head>
+<body>
+    <script>
+        var entry;
+        var average;
+        var total = 0;
+				
+        //get 3 scores from user and add them together
+        var score1 = prompt("Enter test score");
+        score1 = parseInt(score1);
+		total = total + score1;
+		
+		var score2  = prompt("Enter test score");
+        score2 = parseInt(score2);
+		total = total + score2;
+		
+		var score3 = prompt("Enter test score");
+        score3 = parseInt(score3);
+		total = total + score3;
+
+        //calculate the average
+        average = parseInt(total/3);
+
+        document.write("<h1>The Test Scores App</h1>");
+		document.write("Score 1 = " + score1 + "<br>" +
+		    "Score 2 = " + score2 + "<br>" +
+		    "Score 3 = " + score3 + "<br><br>" +
+			"Average score = " + average + "<br><br>");
+            
+        
+    </script>
+    
+    <script>
+		
+    </script>
+</body>
+</html>
