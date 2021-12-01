@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and JavaScript</title>
+    <script>
+        var imgArray = new Array(4);
+        var index = 0;
+        var blueArrow = new Image;
+        var redArrow = new Image;
+
+        function cycle(){
+            document.banner.src = imgArray[index].src;
+            index++;
+            if(index>3){
+                index=0;
+            }
+            setTimeout("cycle()",2000);
+            return;
+        }
+        
+        function startup(){
+            imgArray[0] = new Image;
+            imgArray[0].src = "lions.gif";
+            imgArray[1] = new Image;
+            imgArray[1].src = "tigers.gif";
+            imgArray[2] = new Image;
+            imgArray[2].src = "bears.gif";
+            imgArray[3] = new Image;
+            imgArray[3].src = "ohmy.gif";
+            cycle();
+            return;
+        }
+    </script>
+</head>
+
+<body onload="startup()">
+    <div align="center">
+        <img name="banner" src="lions.gif">
+    </div>
+</body>
+</html>

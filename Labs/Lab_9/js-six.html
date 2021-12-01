@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and JavaScript</title>
+    <script>
+        var blueArrow = new Image;
+        var redArrow = new Image;
+
+        function startup(){
+            blueArrow.src = "blueArrow.gif";
+            redArrow.src = "redArrow.gif";
+            return;
+        }
+
+        function turnBlue(){
+            document.arrow.src=blueArrow.src;
+            return;
+        }
+
+        function turnRed(){
+            document.arrow.src=redArrow.src;
+            return;
+        }
+    </script>
+</head>
+
+<body onload="startup()">
+    <div align="center">
+        <a href="webpage.html" onmouseout="turnBlue()" onmouseover="turnRed()">
+            <img name = "arrow" src="blueArrow.gif"></a>
+    </div>
+</body>
+</html>
