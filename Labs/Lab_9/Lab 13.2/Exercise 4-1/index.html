@@ -1,0 +1,75 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">	
+    <title>Calculate MPG</title>
+    <link rel="stylesheet" href="mpg.css">
+    <script>
+        "use strict";
+        var $ = function(id) {
+            return document.getElementById(id);
+        };
+        var calculateMpg = function(miles, gallons) {
+			var mpg = (miles / gallons);
+			mpg = mpg.toFixed(1);
+			return mpg;
+		};
+		var processEntries = function() {
+            var miles = parseFloat($("miles").value);
+            var gallons = parseFloat($("gallons").value);
+            var isValid = true; 
+            if (isNaN(miles)) {
+                $("miles_error").firstChild.nodeValue = "Miles must be numeric.";
+                isValid = false;
+            }
+            else if(miles<=0){
+                $("miles_error").firstChild.nodeValue = "Miles must be greater than zero.";
+                isValid = false;
+            } 
+            else{
+                $("miles_error").firstChild.nodeValue = "";
+            }
+        
+            if(isNaN(gallons)){
+                $("gallons_error").firstChild.nodeValue = "Gallons must be numeric." 
+            }
+            else if(gallons<=0){
+                $("gallons_error").firstChild.nodeValue = "Gallons must be greater than zero.";
+                isValid = false;
+            }
+            else{
+                $("gallons_error").firstChild.nodeValue = ""
+            }
+
+            if(isValid){
+                $("mpg").value = calculateMpg(miles, gallons);
+            }
+        };
+        function doClear(){
+                document.miles.value="";
+                document.gallons.value="";
+            };
+		window.onload = function() {
+            $("calculate").onclick = processEntries;
+            $("clear").onclick = doClear();
+            $("miles").focus();
+        };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Calculate Miles Per Gallon</h1>
+        <label for="miles">Miles Driven:</label>
+		<input type="text" id="miles">
+        <span id="miles_error">*</span><br>
+        <label for="gallons">Gallons of Gas Used:</label>
+        <input type="text" id="gallons">
+        <span id="gallons_error">*</span><br>
+        <label for="mpgx">Miles Per Gallon</label>
+        <input type="text" id="mpg" disabled><br>
+        <label>&nbsp;</label>
+        <input type="button" id="calculate" value="Calculate MPG"><br>
+        <input type="button" id="clear" value="Clear Entries">
+    </main>
+</body>
+</html>
