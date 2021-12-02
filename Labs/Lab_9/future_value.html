@@ -44,7 +44,10 @@
 				futureValue = futureValue + (futureValue * rate / 100);
 			}
 			futureValue = parseInt(futureValue);
-
+			document.write("Investment amount = " + investment);
+			document.write(" Interest rate = " + rate);
+			document.write(" Years = " + years);
+			document.write(" Future Value is " + futureValue + "<br><br>");
 			alert("Futre Value is " + futureValue)
 
 			again = prompt("Repeat entries?", "y");
@@ -54,12 +57,7 @@
 </head>
 <body>
     <main>
-    	<script>
-			document.write("Investment amount = " + investment);
-			document.write(" Interest rate = " + rate);
-			document.write(" Years = " + years);
-			document.write(" Future Value is " + futureValue + "<br><br>");
-        </script>
+
         Thanks for using the Future Value application.
     </main>
 </body>
