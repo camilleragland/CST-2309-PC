@@ -7,6 +7,12 @@ html{
     background: #101820FF;
 }
 
+h1{
+    position: absolute;
+    font-family: 'Squada One', cursive;
+    color: #FCCF2E;
+}
+
 /*Nav Bar*/
 .nav-bar{
     display:flex;
