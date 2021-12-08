@@ -33,7 +33,7 @@ form{
     padding: 20px;
     border-radius: 6px;
     background: #fff;
-    box-shadow: 0 0 30px 0 #095484;
+    box-shadow: 0 0 30px 0 #CAD644;
 }
 .banner {
     position: relative;
@@ -76,13 +76,13 @@ select {
 }
 
 .info:hover p,.question:hover p, .question label:hover, input:hover::placeholder{
-    color: #095484;
+    color: #2eca36;
 }
 
 .info input:hover, .info select:hover {
     border: 1px solid transparent;
-    box-shadow: 0 0 5px 0 #095484;
-    color: #095484;
+    box-shadow: 0 0 5px 0 #CAD644;
+    color: #8bd644;
 }
 
 .info{
@@ -115,14 +115,14 @@ button{
     padding: 10px;
     border: none;
     border-radius: 5px; 
-    background: #095484;
+    background: #CAD644;
     font-size: 16px;
     color: #fff;
     cursor: pointer;
 }
 
 button:hover {
-    background: #0666a3;
+    background: #97a032;
     }
     
 @media (min-width: 568px) {
